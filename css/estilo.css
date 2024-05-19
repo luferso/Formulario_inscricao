@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body{
+    background-color: #b7d1a649;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+#form_box{
+    margin: auto;
+    width: max-content;
+    padding: 50px;
+    background-color: #d7fdea;
+    border-radius: 15px;
+    border:8px groove #04381a;
+}
+
+#form_box h2{
+    text-align: center;
+    font-size: 50px;
+    color: #032213;
+    padding: 10px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.f_line{
+    display: flex;
+}
+
+.f_line span{
+    padding: 15px;
+}
+
+.f_line label{
+    display: block;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    color: #032213;
+    font-size: 20px;
+}
+
+#i_nome{
+    width: 735px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#i_email, #i_confEmail{
+    width: 350px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#i_genero{
+    width: 180px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.f_line input[type=date]{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+textarea{
+    height: 200px;
+    width: 735px;
+    font-size: 20px;
+}
+
+.f_line input[type=radio], input[type=checkbox]{
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.selecao{
+    margin-right: 60px;
+}
+
+#btt_form{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    background-color: #323332;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+#btt_form:hover{
+    transition: 0.2s;
+    background-color: #04381a;
+}
+
+#f_alert{
+    display: none;
+    background-color: #e42c2c;
+    padding: 15px;
+    margin: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bolder;
+}

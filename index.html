@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário de Agendamento</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/validacao.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="form_box">
+                <h2>Formulário de Inscrição</h2>
+                <p id="f_alert">Preencha todos os campos corretamente</p>
+                <form action="">
+                    <div class="f_line"> <!-- Nome e Sobrenome -->
+                        <span>
+                            <label for="i_nome">Nome Completo:</label>
+                            <input type="text" id="i_nome" required>
+                        </span>
+                    </div> 
+                    
+                    <div class="f_line">  <!-- Email -->
+                        <span>
+                            <label for="i_email">Email:</label>
+                            <input type="text" id="i_email" required>
+                        </span>
+                        <span>
+                            <label for="i_confEmail">Confirmação de email:</label>
+                            <input type="text" id="i_confEmail" required>
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <label for="i_data">Data de Nascimento:</label>
+                            <input type="date" id="i_data" required>
+                        </span>
+
+                        <span>
+                            <label for="">Gênero:</label>
+                            
+                            <input type="radio" name="i_genero" checked>
+                            Fem.
+                            <input type="radio" name="i_genero">
+                            Masc.
+                            <input type="radio" name="i_genero">
+                            Outro:
+                            <input type="text" id="i_genero">
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span class="selecao">
+                            <label for="">Dias da semana disponíveis:</label>
+                            <input type="checkbox" id="i_diaSemana1">Seg.
+                            <input type="checkbox" id="i_diaSemana2">Ter.
+                            <input type="checkbox" id="i_diaSemana3">Qua.
+                            <input type="checkbox" id="i_diaSemana4">Qui.
+                            <input type="checkbox" id="i_diaSemana5">Sex.
+                        </span>
+                        <span class="selecao">
+                            <label for="">Melhor horário para contato:</label>
+                            <input type="checkbox" id="i_horario">Manhã
+                            <input type="checkbox" id="i_horario">Tarde
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <label for="">Comentários:</label>
+                            <textarea name="mensagem"></textarea>
+                        </span>
+                    </div>
+
+                    <div class="f_line"> <!-- Enviar -->
+                        <span>
+                            <input type="submit" id="btt_form" value="Enviar" onclick="validacao()">
+                        </span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
